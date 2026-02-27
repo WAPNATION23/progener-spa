@@ -147,6 +147,19 @@
     /* Observer fade-in */
     .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* Logo styling */
+    .logo-image {
+      height: 60px;
+      width: auto;
+      object-fit: contain;
+      object-position: left center;
+    }
+    @media (max-width: 768px) {
+      .logo-image {
+        height: 45px;
+      }
+    }
   </style>
 </head>
 <body class="text-white">
@@ -156,14 +169,8 @@
     <div class="max-w-7xl mx-auto flex items-center justify-between">
 
       <!-- Logo -->
-      <a href="#inicio" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center shadow-lg group-hover:bg-gold-600 transition-colors duration-200">
-          <i class="fa-solid fa-industry text-navy-900 text-base"></i>
-        </div>
-        <div class="leading-tight">
-          <span class="block text-white font-black text-xl tracking-tight">PROGENER</span>
-          <span class="block text-gold-500 text-[10px] font-semibold tracking-[0.2em] uppercase">SpA · Ferretería Industrial</span>
-        </div>
+      <a href="#inicio" class="flex items-center gap-2 group">
+        <img src="./assets/logo-progener.png" alt="PROGENER SpA" class="logo-image" />
       </a>
 
       <!-- Desktop links -->
@@ -796,6 +803,17 @@
 
             <div class="flex items-start gap-4">
               <div class="w-10 h-10 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-map-pin text-gold-500"></i>
+              </div>
+              <div>
+                <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-1">Dirección física</p>
+                <p class="text-white font-black text-sm">Vladimir Saavedra Nº 446</p>
+                <p class="text-gray-500 text-xs">Antofagasta, Chile</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center flex-shrink-0">
                 <i class="fa-solid fa-handshake text-gold-500"></i>
               </div>
               <div>
@@ -821,14 +839,8 @@
 
         <!-- Brand -->
         <div class="sm:col-span-2 lg:col-span-1">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center">
-              <i class="fa-solid fa-industry text-navy-900 text-base"></i>
-            </div>
-            <div>
-              <span class="block text-white font-black text-lg">PROGENER</span>
-              <span class="block text-gold-500 text-[10px] font-semibold tracking-[0.2em] uppercase">SpA · Ferretería Industrial</span>
-            </div>
+          <div class="mb-4">
+            <img src="./assets/logo-progener.png" alt="PROGENER SpA" style="height: 50px; width: auto; object-fit: contain;" />
           </div>
           <p class="text-gray-600 text-xs leading-relaxed mb-5">
             Proveemos soluciones industriales de calidad para construcción, mantenimiento y reparación, con las mejores marcas del mercado.
@@ -875,16 +887,16 @@
           <h5 class="text-white font-bold text-xs mb-4 uppercase tracking-widest">Contacto</h5>
           <ul class="space-y-3 text-gray-600 text-xs">
             <li class="flex items-center gap-2">
+              <i class="fa-solid fa-map-pin text-gold-500 flex-shrink-0"></i>
+              <span>Vladimir Saavedra Nº 446, Antofagasta</span>
+            </li>
+            <li class="flex items-center gap-2">
               <i class="fa-brands fa-whatsapp text-gold-500 flex-shrink-0"></i>
               <a href="https://wa.me/56941829469" class="hover:text-gold-500 transition-colors">+56 9 4182 9469</a>
             </li>
             <li class="flex items-center gap-2">
               <i class="fa-solid fa-envelope text-gold-500 flex-shrink-0"></i>
               <a href="mailto:contacto@progener.cl" class="hover:text-gold-500 transition-colors">contacto@progener.cl</a>
-            </li>
-            <li class="flex items-center gap-2">
-              <i class="fa-solid fa-handshake text-gold-500 flex-shrink-0"></i>
-              <span>Marcas líderes de la industria</span>
             </li>
           </ul>
         </div>
