@@ -169,8 +169,17 @@
     <div class="max-w-7xl mx-auto flex items-center justify-between">
 
       <!-- Logo -->
-      <a href="#inicio" class="flex items-center gap-2 group">
-        <img src="./assets/logo-progener.png" alt="PROGENER SpA" class="logo-image" />
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <img src="./assets/logo-progener.png" alt="PROGENER SpA" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="flex items-center gap-3" style="display: none;">
+          <div class="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center shadow-lg group-hover:bg-gold-600 transition-colors duration-200">
+            <i class="fa-solid fa-industry text-navy-900 text-base"></i>
+          </div>
+          <div class="leading-tight">
+            <span class="block text-white font-black text-xl tracking-tight">PROGENER</span>
+            <span class="block text-gold-500 text-[10px] font-semibold tracking-[0.2em] uppercase">SpA · Ferretería Industrial</span>
+          </div>
+        </div>
       </a>
 
       <!-- Desktop links -->
@@ -840,7 +849,16 @@
         <!-- Brand -->
         <div class="sm:col-span-2 lg:col-span-1">
           <div class="mb-4">
-            <img src="./assets/logo-progener.png" alt="PROGENER SpA" style="height: 50px; width: auto; object-fit: contain;" />
+            <img src="./assets/logo-progener.png" alt="PROGENER SpA" style="height: 50px; width: auto; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="flex items-center gap-3" style="display: none;">
+              <div class="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-industry text-navy-900 text-base"></i>
+              </div>
+              <div>
+                <span class="block text-white font-black text-lg">PROGENER</span>
+                <span class="block text-gold-500 text-[10px] font-semibold tracking-[0.2em] uppercase">SpA · Ferretería Industrial</span>
+              </div>
+            </div>
           </div>
           <p class="text-gray-600 text-xs leading-relaxed mb-5">
             Proveemos soluciones industriales de calidad para construcción, mantenimiento y reparación, con las mejores marcas del mercado.
