@@ -160,15 +160,45 @@
 
     /* Logo styling */
     .logo-image {
-      height: 60px;
+      height: 72px;
+      max-width: 228px;
       width: auto;
       object-fit: contain;
       object-position: left center;
     }
     @media (max-width: 768px) {
       .logo-image {
-        height: 45px;
+        height: 56px;
+        max-width: 182px;
       }
+    }
+
+    /* Client logos */
+    .client-logo-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(242,246,250,0.95) 100%);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.28);
+    }
+    .client-logo-wrap {
+      min-height: 118px;
+    }
+    .client-logo {
+      max-width: 100%;
+      max-height: 68px;
+      width: auto;
+      object-fit: contain;
+    }
+    .client-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 9999px;
+      border: 1px solid rgba(251,191,36,0.2);
+      background: rgba(17,34,64,0.8);
+      color: #E5E7EB;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
     }
   </style>
 </head>
@@ -338,8 +368,8 @@
         </div>
         <div class="hidden md:block w-px h-5 bg-navy-900/20"></div>
         <div class="flex items-center gap-2 font-bold text-sm md:text-base">
-          <i class="fa-brands fa-whatsapp text-lg"></i>
-          <span>+56 9 4182 9469</span>
+          <i class="fa-solid fa-phone-volume text-lg"></i>
+          <span>+56 9 4182 9469 | +56 9 4762 3264</span>
         </div>
       </div>
     </div>
@@ -689,6 +719,86 @@
   </section>
 
 
+  <!-- ======================== CLIENTES ======================== -->
+  <section id="clientes" class="bg-navy-950 py-20 md:py-24 px-4 md:px-10 lg:px-20 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-12 reveal">
+        <p class="text-gold-500 font-bold text-sm tracking-widest uppercase mb-3">Clientes que confian en PROGENER</p>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4 leading-tight">
+          Acompa&ntilde;amos a empresas que exigen<br/><span class="text-gold-gradient">respuesta, stock y continuidad operacional.</span>
+        </h2>
+        <div class="divider-gold mx-auto mb-5"></div>
+        <p class="text-gray-400 max-w-3xl mx-auto text-base md:text-lg">
+          Sumamos relaciones comerciales con empresas del sector industrial, montaje y servicios, manteniendo una atencion cercana y tiempos de respuesta rapidos.
+        </p>
+      </div>
+
+      <div class="reveal grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 mb-8">
+        <article class="client-logo-card rounded-3xl p-6 border border-white/10">
+          <div class="client-logo-wrap flex items-center justify-center rounded-2xl bg-white">
+            <img src="./assets/clientes/LOGO RESITER.png" alt="Resiter" class="client-logo" />
+          </div>
+          <div class="pt-5">
+            <p class="text-navy-950 font-black text-lg">Resiter</p>
+            <p class="text-slate-500 text-sm">Economia circular e industria</p>
+          </div>
+        </article>
+
+        <article class="client-logo-card rounded-3xl p-6 border border-white/10">
+          <div class="client-logo-wrap flex items-center justify-center rounded-2xl bg-white">
+            <img src="./assets/clientes/LOGO TECNO FAST.png" alt="Tecno Fast" class="client-logo" />
+          </div>
+          <div class="pt-5">
+            <p class="text-navy-950 font-black text-lg">Tecno Fast</p>
+            <p class="text-slate-500 text-sm">Space solutions y proyectos modulares</p>
+          </div>
+        </article>
+
+        <article class="client-logo-card rounded-3xl p-6 border border-white/10">
+          <div class="client-logo-wrap flex items-center justify-center rounded-2xl bg-white">
+            <img src="./assets/clientes/LOGOO SYNCORE.png" alt="Syncore Montajes" class="client-logo" />
+          </div>
+          <div class="pt-5">
+            <p class="text-navy-950 font-black text-lg">Syncore Montajes</p>
+            <p class="text-slate-500 text-sm">Montajes industriales y soporte en terreno</p>
+          </div>
+        </article>
+
+        <article class="client-logo-card rounded-3xl p-6 border border-white/10">
+          <div class="client-logo-wrap flex items-center justify-center rounded-2xl bg-white">
+            <img src="./assets/clientes/LOGO PROMET MONTAJES.png" alt="Promet Servicios" class="client-logo" />
+          </div>
+          <div class="pt-5">
+            <p class="text-navy-950 font-black text-lg">Promet Servicios</p>
+            <p class="text-slate-500 text-sm">Construccion industrial y servicios</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="reveal bg-navy-900 border border-white/5 rounded-3xl p-7 md:p-8">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 mb-6">
+          <div>
+            <p class="text-gold-500 text-xs font-black tracking-[0.28em] uppercase mb-2">Tambien trabajamos con</p>
+            <h3 class="text-white text-xl md:text-2xl font-black">AMFA, Hydraulic Word, Resermaq y otras operaciones industriales.</h3>
+          </div>
+          <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/25 text-gold-400 text-xs font-black px-4 py-2 rounded-full whitespace-nowrap">
+            <i class="fa-solid fa-handshake-angle"></i>
+            Relaciones comerciales activas
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <span class="client-pill"><i class="fa-solid fa-industry text-gold-500"></i>AMFA</span>
+          <span class="client-pill"><i class="fa-solid fa-gears text-gold-500"></i>Hydraulic Word</span>
+          <span class="client-pill"><i class="fa-solid fa-screwdriver-wrench text-gold-500"></i>Resermaq</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
   <!-- ======================== CONTACTO + QR ======================== -->
   <section id="contacto" class="bg-navy-950 py-20 md:py-28 px-4 md:px-10 lg:px-20">
     <div class="max-w-7xl mx-auto">
@@ -803,12 +913,16 @@
 
             <div class="flex items-start gap-4">
               <div class="w-10 h-10 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center flex-shrink-0">
-                <i class="fa-brands fa-whatsapp text-gold-500"></i>
+                <i class="fa-solid fa-phone text-gold-500"></i>
               </div>
               <div>
-                <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-1">WhatsApp directo</p>
-                <a href="https://wa.me/56941829469" target="_blank" rel="noopener"
-                   class="text-white font-black text-sm hover:text-gold-500 transition-colors">+56 9 4182 9469</a>
+                <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-2">Telefonos empresariales</p>
+                <div class="flex flex-col gap-2">
+                  <a href="https://wa.me/56941829469" target="_blank" rel="noopener"
+                     class="text-white font-black text-sm hover:text-gold-500 transition-colors">+56 9 4182 9469 <span class="text-gray-500 font-semibold">WhatsApp</span></a>
+                  <a href="tel:+56947623264"
+                     class="text-white font-black text-sm hover:text-gold-500 transition-colors">+56 9 4762 3264 <span class="text-gray-500 font-semibold">Linea comercial</span></a>
+                </div>
               </div>
             </div>
 
@@ -866,7 +980,7 @@
         <!-- Brand -->
         <div class="sm:col-span-2 lg:col-span-1">
           <div class="mb-4">
-            <img src="./assets/logo-progener.png" alt="PROGENER SpA" style="height: 50px; width: auto; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <img src="./assets/logo-progener.png" alt="PROGENER SpA" style="height: 60px; width: auto; max-width: 210px; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
             <div class="flex items-center gap-3" style="display: none;">
               <div class="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center">
                 <i class="fa-solid fa-industry text-navy-900 text-base"></i>
@@ -925,9 +1039,12 @@
               <i class="fa-solid fa-map-pin text-gold-500 flex-shrink-0"></i>
               <span>Vladimir Saavedra Nº 446, Antofagasta</span>
             </li>
-            <li class="flex items-center gap-2">
-              <i class="fa-brands fa-whatsapp text-gold-500 flex-shrink-0"></i>
-              <a href="https://wa.me/56941829469" class="hover:text-gold-500 transition-colors">+56 9 4182 9469</a>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-phone text-gold-500 flex-shrink-0 mt-0.5"></i>
+              <div class="flex flex-col">
+                <a href="https://wa.me/56941829469" class="hover:text-gold-500 transition-colors">+56 9 4182 9469</a>
+                <a href="tel:+56947623264" class="hover:text-gold-500 transition-colors">+56 9 4762 3264</a>
+              </div>
             </li>
             <li class="flex items-center gap-2">
               <i class="fa-solid fa-envelope text-gold-500 flex-shrink-0"></i>
