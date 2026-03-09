@@ -140,13 +140,23 @@
 
     /* Logo strip fade */
     .logo-item {
-      opacity: 0.45;
-      filter: grayscale(100%) brightness(2);
-      transition: all 0.25s ease;
+      opacity: 1;
+      filter: none;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
     }
     .logo-item:hover {
-      opacity: 1;
-      filter: grayscale(0%) brightness(1);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 34px rgba(0,0,0,0.28);
+    }
+    .brand-logo {
+      max-width: 100%;
+      max-height: 50px;
+      object-fit: contain;
+    }
+    @media (max-width: 768px) {
+      .brand-logo {
+        max-height: 42px;
+      }
     }
 
     /* QR glow */
@@ -210,7 +220,7 @@
 
       <!-- Logo -->
       <a href="#inicio" class="flex items-center gap-3 group">
-        <img src="./assets/logo-progener.png" alt="PROGENER SpA" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <img src="./assets/logo-progener-header.jpeg" alt="PROGENER SpA" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
         <div class="flex items-center gap-3" style="display: none;">
           <div class="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center shadow-lg group-hover:bg-gold-600 transition-colors duration-200">
             <i class="fa-solid fa-industry text-navy-900 text-base"></i>
@@ -686,31 +696,28 @@
       </div>
 
       <!-- Logo grid -->
-      <div class="reveal grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8 gap-4 mb-10">
+      <div class="reveal grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-4 mb-10">
 
-        <div class="logo-item bg-navy-800 border border-white/5 rounded-xl p-4 flex items-center justify-center h-16 cursor-pointer">
-          <img src="https://placehold.co/100x36/112240/FBBF24?text=Makita&font=inter" alt="Makita" class="max-h-8 object-contain" />
+        <div class="logo-item bg-white/95 border border-white/25 rounded-2xl p-4 flex items-center justify-center h-20 cursor-pointer">
+          <img src="./assets/marcas/MAKITA.png" alt="Makita" class="brand-logo" />
         </div>
-        <div class="logo-item bg-navy-800 border border-white/5 rounded-xl p-4 flex items-center justify-center h-16 cursor-pointer">
-          <img src="https://placehold.co/100x36/112240/FBBF24?text=DeWalt&font=inter" alt="DeWalt" class="max-h-8 object-contain" />
+        <div class="logo-item bg-white/95 border border-white/25 rounded-2xl p-4 flex items-center justify-center h-20 cursor-pointer">
+          <img src="./assets/marcas/DEWALT.png" alt="DeWalt" class="brand-logo" />
         </div>
-        <div class="logo-item bg-navy-800 border border-white/5 rounded-xl p-4 flex items-center justify-center h-16 cursor-pointer">
-          <img src="https://placehold.co/100x36/112240/FFFFFF?text=Bosch&font=inter" alt="Bosch" class="max-h-8 object-contain" />
+        <div class="logo-item bg-white/95 border border-white/25 rounded-2xl p-4 flex items-center justify-center h-20 cursor-pointer">
+          <img src="./assets/marcas/BOSCH.png" alt="Bosch" class="brand-logo" />
         </div>
-        <div class="logo-item bg-navy-800 border border-white/5 rounded-xl p-4 flex items-center justify-center h-16 cursor-pointer">
-          <img src="https://placehold.co/100x36/112240/FFFFFF?text=Ingersoll&font=inter" alt="Ingersoll Rand" class="max-h-8 object-contain" />
+        <div class="logo-item bg-white/95 border border-white/25 rounded-2xl p-4 flex items-center justify-center h-20 cursor-pointer">
+          <img src="./assets/marcas/INGRESOLL.png" alt="Ingersoll Rand" class="brand-logo" />
         </div>
-        <div class="logo-item bg-navy-800 border border-white/5 rounded-xl p-4 flex items-center justify-center h-16 cursor-pointer">
-          <img src="https://placehold.co/100x36/112240/FBBF24?text=Larzep&font=inter" alt="Larzep" class="max-h-8 object-contain" />
+        <div class="logo-item bg-white/95 border border-white/25 rounded-2xl p-4 flex items-center justify-center h-20 cursor-pointer">
+          <img src="./assets/marcas/LOCTITE.png" alt="Loctite" class="brand-logo" />
         </div>
-        <div class="logo-item bg-navy-800 border border-white/5 rounded-xl p-4 flex items-center justify-center h-16 cursor-pointer">
-          <img src="https://placehold.co/100x36/112240/WHITE?text=Loctite&font=inter" alt="Loctite" class="max-h-8 object-contain" />
+        <div class="logo-item bg-white/95 border border-white/25 rounded-2xl p-4 flex items-center justify-center h-20 cursor-pointer">
+          <img src="./assets/marcas/TOTAL.png" alt="Total Herramientas" class="brand-logo" />
         </div>
-        <div class="logo-item bg-navy-800 border border-white/5 rounded-xl p-4 flex items-center justify-center h-16 cursor-pointer">
-          <img src="https://placehold.co/100x36/112240/FBBF24?text=WD-40&font=inter" alt="WD-40" class="max-h-8 object-contain" />
-        </div>
-        <div class="logo-item bg-navy-800 border border-white/5 rounded-xl p-4 flex items-center justify-center h-16 cursor-pointer">
-          <img src="https://placehold.co/100x36/112240/FFFFFF?text=Klingspor&font=inter" alt="Klingspor" class="max-h-8 object-contain" />
+        <div class="logo-item bg-white/95 border border-white/25 rounded-2xl p-4 flex items-center justify-center h-20 cursor-pointer">
+          <img src="./assets/marcas/TRAMONTINA.png" alt="Tramontina" class="brand-logo" />
         </div>
 
       </div>
@@ -980,7 +987,7 @@
         <!-- Brand -->
         <div class="sm:col-span-2 lg:col-span-1">
           <div class="mb-4">
-            <img src="./assets/logo-progener.png" alt="PROGENER SpA" style="height: 60px; width: auto; max-width: 210px; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <img src="./assets/logo-progener-header.jpeg" alt="PROGENER SpA" style="height: 60px; width: auto; max-width: 250px; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
             <div class="flex items-center gap-3" style="display: none;">
               <div class="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center">
                 <i class="fa-solid fa-industry text-navy-900 text-base"></i>
